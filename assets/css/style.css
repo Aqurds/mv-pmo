@@ -107,6 +107,23 @@ header {
   margin-right: 17px;
 }
 
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.skill-item img {
+  width: 48px;
+  height: 48px;
+  margin: 12px;
+}
+
+.skill-div ul li > img {
+  position: absolute;
+  right: 40px;
+  top: 25px;
+}
+
 #nav img {
   float: right;
 }
@@ -132,11 +149,6 @@ header {
   margin-right: 24px;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-}
-
 .work-title {
   font-size: 32px;
   color: #172b4d;
@@ -160,7 +172,7 @@ header {
 
 .work-info ul li {
   margin-right: 20px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -174,7 +186,7 @@ header {
 }
 
 .work-description {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -199,7 +211,7 @@ header {
 }
 
 .work-tag ul li {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -218,7 +230,7 @@ header {
 }
 
 .project-link {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -269,23 +281,17 @@ header {
 }
 
 .skill-div ul li {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   align-items: center;
-  color: #000000;
+  color: #000;
   padding-bottom: 20px;
   padding-top: 20px;
   border-bottom: 1px solid #dfe1e6;
   position: relative;
-}
-
-.skill-div ul li > img {
-  position: absolute;
-  right: 40px;
-  top: 25px;
 }
 
 .skill-item-div {
@@ -301,10 +307,4 @@ header {
   background: #f7f7f9;
   border-radius: 8px;
   margin-bottom: 12px;
-}
-
-.skill-item img {
-  width: 48px;
-  height: 48px;
-  margin: 12px;
 }
