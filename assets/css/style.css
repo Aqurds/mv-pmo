@@ -116,9 +116,10 @@ header {
   width: 48px;
   height: 48px;
   margin: 12px;
+  float: left;
 }
 
-.skill-div ul li > img {
+.skill-div > ul > li > img {
   position: absolute;
   right: 40px;
   top: 25px;
@@ -246,6 +247,17 @@ header {
   float: left;
   margin-top: 12px;
   margin-bottom: 10px;
+  transition: all 0.3s;
+}
+
+.project-link:hover {
+  background: #6070FF;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+}
+
+.project-link:active {
+  background: #2230d2;
 }
 
 .section-about {
@@ -280,7 +292,7 @@ header {
   margin-top: 20px;
 }
 
-.skill-div ul li {
+.skill-div > ul > li {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -307,4 +319,5 @@ header {
   background: #f7f7f9;
   border-radius: 8px;
   margin-bottom: 12px;
+  line-height: 70px;
 }
