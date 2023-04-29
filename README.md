@@ -42,7 +42,6 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -84,14 +83,6 @@ After you're finished please remove all the comments and instructions!
 - **Show my skills**
 - **Show my projects**
 - **Express my future goal as a software engineer**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- Live Demo Link will be added soon!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
