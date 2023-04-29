@@ -18,9 +18,7 @@ header {
 
 #logo {
   font-style: normal;
-  font-weight: 700;
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -40,10 +38,6 @@ header {
   display: flex;
   justify-content: end;
   align-items: center;
-}
-
-#nav img{
-  float: right;
 }
 
 .section {
@@ -69,7 +63,7 @@ header {
   line-height: 52px;
   display: flex;
   align-items: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .content {
@@ -87,7 +81,7 @@ header {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 .social-icons {
@@ -101,3 +95,6 @@ header {
   margin-right: 17px;
 }
 
+#nav img {
+  float: right;
+}
