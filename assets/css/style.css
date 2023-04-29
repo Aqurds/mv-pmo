@@ -6,8 +6,7 @@ body {
 
 header {
   display: flex;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 24px;
   background: #fff;
 }
 
@@ -26,6 +25,7 @@ header {
   align-items: center;
   text-align: center;
   color: #6070ff;
+  text-decoration: none;
 }
 
 #logo-icon {
@@ -51,11 +51,13 @@ header {
   background-image: url('../image/header-shapes-mobile.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  border-bottom-left-radius: 70px;
 }
 
 #title {
-  width: 327px;
-  height: 150px;
+  margin: 0;
+  max-width: 327px;
+  min-height: 150px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -87,6 +89,16 @@ header {
 .social-icons {
   display: flex;
   justify-content: flex-start;
+}
+
+.social-icons-ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.social-icons-ul li{
+  list-style: none;
 }
 
 .social-icons img {
