@@ -91,13 +91,13 @@ header {
   justify-content: flex-start;
 }
 
-.social-icons-ul{
+.social-icons-ul {
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-.social-icons-ul li{
+.social-icons-ul li {
   list-style: none;
 }
 
