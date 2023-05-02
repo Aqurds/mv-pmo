@@ -225,6 +225,21 @@ header {
   border-radius: 5px;
 }
 
+.work-tag p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  background: #ebebff;
+  padding: 4px 12px;
+  margin-right: 8px;
+  border-radius: 5px;
+  float: left;
+}
+
 .project-link-div {
   width: 100%;
   display: block;
