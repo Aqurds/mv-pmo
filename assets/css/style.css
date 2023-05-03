@@ -386,8 +386,8 @@ header {
   flex-direction: column;
 }
 
-.contact-form form input, 
-.contact-form form textarea, 
+.contact-form form input,
+.contact-form form textarea,
 .contact-form form button {
   background: #fff;
   border: 1px solid #cfd8dc;
