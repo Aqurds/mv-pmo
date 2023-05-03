@@ -370,7 +370,6 @@ header {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 20px;
   color: #ebebff;
   line-height: 28px;
 }
@@ -387,9 +386,7 @@ header {
   flex-direction: column;
 }
 
-.contact-form form input, 
-.contact-form form textarea,
-.contact-form form button {
+.contact-form form input, .contact-form form textarea, .contact-form form button {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
