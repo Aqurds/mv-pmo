@@ -321,3 +321,21 @@ header {
   margin-bottom: 12px;
   line-height: 70px;
 }
+
+.section-contact {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 120px;
+  padding-bottom: 36px;
+  background: #6070ff;
+  border-top-left-radius: 70px;
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url('../image/contact-form-shapes-mobile.png');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
