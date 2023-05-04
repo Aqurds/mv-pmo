@@ -382,3 +382,7 @@ header {
   color: #172b4d;
   margin-bottom: 20px;
 }
+
+.contact-form form button {
+  width: 142px;
+}
