@@ -405,5 +405,10 @@ header {
 }
 
 .contact-form form button {
+  color: #6070ff;
+  font-weight: 500;
+}
+
+.contact-form form button {
   width: 142px;
 }
