@@ -105,7 +105,7 @@ header {
   width: 20px;
   height: 20px;
   margin-right: 17px;
-  transition: all 1s;
+  transition: all .5s;
 }
 
 .social-icons img:hover {
@@ -136,6 +136,11 @@ header {
 .card img {
   width: 100%;
   height: auto;
+  transition: all .3s;
+}
+
+.card img:hover {
+  width: 101%;
 }
 
 .skill-item img {
@@ -287,7 +292,7 @@ header {
   float: left;
   margin-top: 12px;
   margin-bottom: 10px;
-  transition: all 3s;
+  transition: all .5s;
 }
 
 .project-link:hover {
@@ -477,8 +482,9 @@ header {
     flex-direction: row;
     min-height: 100px;
     width: 80%;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     max-width: 1200px;
+    margin: 0 auto;
   }
 
   .section-intro {
