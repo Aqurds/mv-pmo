@@ -475,7 +475,8 @@ header {
   .section-intro {
     padding-left: 15%;
     padding-right: 15%;
-    background-size: cover;
+    background-image: url('../image/header-bg-desktop.png');
+    background-position: center;
   }
 
   .card:nth-child(even) {
@@ -548,5 +549,11 @@ header {
   .contact-form {
     padding: 0 10%;
     width: 80%;
+  }
+
+  .section-contact {
+    background-image: url('../image/contact-form-background-shapes-desktop.png');
+    background-size: 95% auto;
+    background-position: center;
   }
 }
