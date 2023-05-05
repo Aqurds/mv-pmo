@@ -409,3 +409,8 @@ header {
   font-weight: 500;
   width: 142px;
 }
+
+/* Media query css for desktop version */
+@media screen and (min-width: 786px) {
+
+}
