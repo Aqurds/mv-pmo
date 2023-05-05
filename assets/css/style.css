@@ -105,6 +105,12 @@ header {
   width: 20px;
   height: 20px;
   margin-right: 17px;
+  transition: all 1s;
+}
+
+.social-icons img:hover {
+  width: 24px;
+  height: 24px;
 }
 
 .card {
