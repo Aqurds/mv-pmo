@@ -107,6 +107,17 @@ header {
   margin-right: 17px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .card img {
   width: 100%;
   height: auto;
@@ -410,7 +421,139 @@ header {
   width: 142px;
 }
 
-/* Media query css for desktop version */
-@media screen and (min-width: 786px) {
+.nav-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
 
+.nav-ul > li {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #344563;
+  display: inline;
+  padding: 0 16px;
+}
+
+.nav-ul > li > a {
+  text-decoration: none;
+  color: #344563;
+}
+
+/* Media query css for desktop version */
+@media screen and (min-width: 768px) {
+body {
+  background: #f4f5f7;
+}
+
+header {
+  padding: 24px 10%
+}
+
+#nav img {
+  display: none;
+}
+
+.nav-ul {
+  display: block;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  min-height: 100px;
+  width: 80%;
+  margin-left: 10%;
+  max-width: 1200px;
+}
+
+.section-intro {
+  padding-left: 15%;
+  padding-right: 15%;
+  background-size: cover;
+}
+
+.card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.card > div {
+  height: 100%;
+}
+
+.card > div:last-child {
+  padding-left: 20px;
+}
+
+.card > div > h3 {
+  margin-bottom: 5px;
+}
+
+.work-info {
+  margin-bottom: 25px;
+}
+
+.work-description {
+  margin-bottom: 20px;
+}
+
+.work-tag {
+  margin-bottom: 25px;
+}
+
+.section-about {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.section-about > div:first-child {
+  width: 60%;
+  margin-right: 50px;
+}
+
+.skill-div > ul {
+  margin-top: -10px;
+
+}
+
+.skill-item-div {
+  display: block;
+  overflow: hidden;
+}
+
+.skill-item-div > li {
+  float: left;
+  width: 122px;
+  height: 120px;
+  margin-right: 12px;
+  line-height: 15px;
+}
+
+.skill-item {
+  flex-direction: column;
+  padding-left: 12px;
+}
+
+.skill-item img {
+  margin-left: 0;
+}
+
+.section-contact > div {
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  padding: 0 10%;
+  width: 80%;
+}
 }
