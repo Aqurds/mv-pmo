@@ -121,6 +121,12 @@ header {
   float: left;
 }
 
+.skill-div > ul > li > img {
+  position: absolute;
+  right: 40px;
+  top: 25px;
+}
+
 .social-icons img:hover {
   width: 24px;
   height: 24px;
@@ -144,12 +150,6 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-.skill-div > ul > li > img {
-  position: absolute;
-  right: 40px;
-  top: 25px;
 }
 
 .card img:hover {
