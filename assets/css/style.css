@@ -115,7 +115,6 @@ header {
   border-radius: 16px;
   border: 1px solid #dfe1e6;
   padding: 16px;
-  flex-direction: column;
   align-items: center;
   gap: 12px;
   margin-left: 24px;
