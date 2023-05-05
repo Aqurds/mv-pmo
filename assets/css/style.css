@@ -281,13 +281,16 @@ header {
   float: left;
   margin-top: 12px;
   margin-bottom: 10px;
-  transition: all 0.3s;
+  transition: all 3s;
 }
 
 .project-link:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
+  font-size: 20px;
+  padding: 12px 18px;
+  width: 175px;
 }
 
 .project-link:active {
