@@ -105,7 +105,20 @@ header {
   width: 20px;
   height: 20px;
   margin-right: 17px;
-  transition: all .5s;
+  transition: all 0.5s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.skill-item img {
+  width: 48px;
+  height: 48px;
+  margin: 12px;
+  float: left;
 }
 
 .social-icons img:hover {
@@ -133,27 +146,14 @@ header {
   width: 100%;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-  transition: all .3s;
-}
-
-.card img:hover {
-  width: 101%;
-}
-
-.skill-item img {
-  width: 48px;
-  height: 48px;
-  margin: 12px;
-  float: left;
-}
-
 .skill-div > ul > li > img {
   position: absolute;
   right: 40px;
   top: 25px;
+}
+
+.card img:hover {
+  width: 101%;
 }
 
 #nav img {
@@ -292,7 +292,7 @@ header {
   float: left;
   margin-top: 12px;
   margin-bottom: 10px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .project-link:hover {
@@ -482,7 +482,6 @@ header {
     flex-direction: row;
     min-height: 100px;
     width: 80%;
-    /* margin-left: 10%; */
     max-width: 1200px;
     margin: 0 auto;
   }
