@@ -455,6 +455,51 @@ header {
   color: #344563;
 }
 
+/* mobile css */
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(96, 112, 255, 0.75);
+  z-index: 9;
+  display: none;
+}
+
+.mobile-menu-close {
+  text-align: right;
+  padding: 18px 38px;
+}
+
+.mobile-menu-close img {
+  cursor: pointer;
+}
+
+.mobile-menu ul {
+  list-style: none;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 30px;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.text-filter {
+  filter: blur(10px);
+}
+
 /* Media query css for desktop version */
 @media screen and (min-width: 768px) {
   body {
