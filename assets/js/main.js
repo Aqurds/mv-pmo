@@ -1,12 +1,12 @@
 // Define state in constant
 const State = ['open', 'close'];
 
-// Mobile menu toggle function, will act on parameter. 
+// Mobile menu toggle function, will act on parameter.
 // Also apply text blur effect based on figma design.
 function toggleMobileMenu(state) {
-  const textBlurElem = document.getElementsByClassName('section-intro')[0],
-    textBlueLogo = document.getElementById('logo-div'),
-      classApplicable = 'text-filter';
+  const textBlurElem = document.getElementsByClassName('section-intro')[0];
+  const textBlueLogo = document.getElementById('logo-div');
+  const classApplicable = 'text-filter';
   if (state === State[0]) {
      document.getElementById('mobile-menu').style.display = 'block';
      textBlurElem.classList.add(classApplicable);
