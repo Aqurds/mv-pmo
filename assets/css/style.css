@@ -121,6 +121,10 @@ header {
   float: left;
 }
 
+.mobile-menu-close img {
+  cursor: pointer;
+}
+
 .skill-div > ul > li > img {
   position: absolute;
   right: 40px;
@@ -470,10 +474,6 @@ header {
 .mobile-menu-close {
   text-align: right;
   padding: 18px 38px;
-}
-
-.mobile-menu-close img {
-  cursor: pointer;
 }
 
 .mobile-menu ul {
