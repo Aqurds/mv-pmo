@@ -8,13 +8,13 @@ function toggleMobileMenu(state) {
   const textBlueLogo = document.getElementById('logo-div');
   const classApplicable = 'text-filter';
   if (state === State[0]) {
-     document.getElementById('mobile-menu').style.display = 'block';
-     textBlurElem.classList.add(classApplicable);
-     textBlueLogo.classList.add(classApplicable);
+    document.getElementById('mobile-menu').style.display = 'block';
+    textBlurElem.classList.add(classApplicable);
+    textBlueLogo.classList.add(classApplicable);
   } else if (state === State[1]) {
-     document.getElementById('mobile-menu').style.display = 'none';
-     textBlurElem.classList.remove(classApplicable);
-     textBlueLogo.classList.remove(classApplicable);
+    document.getElementById('mobile-menu').style.display = 'none';
+    textBlurElem.classList.remove(classApplicable);
+    textBlueLogo.classList.remove(classApplicable);
   }
 }
 
@@ -24,7 +24,6 @@ document.getElementById('logo-icon').addEventListener('click', () => { toggleMob
 // Close mobile menu by clicking on close button and menu items
 const closeElem = document.getElementsByClassName('close-mobile-menu');
 
-for (let i = 0; i < closeElem.length; i+=1) {
-  closeElem[i].addEventListener('click', () => { toggleMobileMenu(State[1]) });
+for (let i = 0; i < closeElem.length; i += 1) {
+  closeElem[i].addEventListener('click', () => { toggleMobileMenu(State[1]); });
 }
-
