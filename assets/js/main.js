@@ -19,11 +19,11 @@ function toggleMobileMenu(state) {
       classApplicable = "text-filter";
    if (state == State[0]) {
       document.getElementById("mobile-menu").style.display = "block";
-      textBlurElem.classList.add(classApplicable);
-      textBlueLogo.classList.add(classApplicable);
+    //   textBlurElem.classList.add(classApplicable);
+    //   textBlueLogo.classList.add(classApplicable);
    } else if (state == State[1]) {
       document.getElementById("mobile-menu").style.display = "none";
-      textBlurElem.classList.remove(classApplicable);
-      textBlueLogo.classList.remove(classApplicable);
+    //   textBlurElem.classList.remove(classApplicable);
+    //   textBlueLogo.classList.remove(classApplicable);
    }
 }
