@@ -22,15 +22,17 @@
         </div>
         <nav id="nav">
             <img id="logo-icon" src="./assets/image/menu_icon.png" alt="menu icon">
-            <ul class="nav-ul">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="nav-ul" id="mobile-menu-ul">
+                <li>
+                    <a href="#portfolio-section">Portfolio</a>
+                </li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#contact-section">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Section, contains intro tile, description -->
+    <!-- Section, contains intro title, description -->
     <section class="section-intro">
         <h1 class="title">
             I’m Omar. Glad to see you!
@@ -73,7 +75,7 @@
     </section>
 
     <!-- Section, contains work details -->
-    <section class="section-work">
+    <section class="section-work" id="portfolio-section">
         <div class="card">
             <div>
                 <img class="work-image" src="./assets/image/work_image_1.png" alt="Work image one">
@@ -205,7 +207,7 @@
     </section>
 
     <!-- Section, contains about information -->
-    <section class="section-about">
+    <section class="section-about" id="about-section">
         <div>
             <h1 class="title about-title">
                 About Myself
@@ -283,7 +285,7 @@
     </section>
 
     <!-- Section, contains contact form -->
-    <section class="section-contact">
+    <section class="section-contact" id="contact-section">
         <div>
             <h1 class="title contact-title">
                 Contact me
@@ -305,8 +307,15 @@
 
     <!-- Section, contains mobile menu  -->
     <section id="mobile-menu">
-        <div class="mobile-menu-close" id="close-mobile-menu">
+        <div class="mobile-menu-close close-mobile-menu">
             <img src="./assets/image/menu-close.png" alt="">
+        </div>
+        <div class="mobile-menu">
+            <ul class="mobile-menu close-mobile-menu">
+                <li><a href="#portfolio-section">Portfolio</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
         </div>
     </section>
 
