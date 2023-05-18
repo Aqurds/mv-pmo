@@ -27,3 +27,47 @@ const closeElem = document.getElementsByClassName('close-mobile-menu');
 for (let i = 0; i < closeElem.length; i += 1) {
   closeElem[i].addEventListener('click', () => { toggleMobileMenu(State[1]); });
 }
+//window poppup
+// Project popup code starts here
+const projectData = [
+  {
+    id: 0,
+    name: "Tonic",
+    tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    image: "./assets/image/work_image_1.png",
+    technologies: ["Html", "CSS", "Javascript", "Python"],
+    live_link: "www.google.com",
+    source_link: "www.google.com"
+  },
+  {
+    id: 1,
+    name: "Multi-Post Stories",
+    tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    image: "./assets/image/work_image_2.png",
+    technologies: ["Html", "CSS", "Javascript", "Ruby"],
+    live_link: "www.google.com",
+    source_link: "www.google.com"
+  },
+  {
+    id: 2,
+    name: "Tonic",
+    tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    image: "./assets/image/work_image_3.png",
+    technologies: ["Html", "CSS", "Javascript", "Python"],
+    live_link: "www.google.com",
+    source_link: "www.google.com"
+  },
+  {
+    id: 3,
+    name: "Multi-Post Stories",
+    tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    image: "./assets/image/work_image_4.png",
+    technologies: ["Html", "CSS", "Javascript", "Ruby"],
+    live_link: "www.google.com",
+    source_link: "www.google.com"
+  }
+];
