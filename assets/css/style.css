@@ -183,6 +183,7 @@ header {
 .work-info {
   width: 100%;
   display: block;
+  margin-bottom: 20px;
 }
 
 .work-info ul {
@@ -229,7 +230,7 @@ header {
   color: #344563;
   width: 100%;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
 
 .work-tag {
@@ -277,6 +278,7 @@ header {
 .project-link-div {
   width: 100%;
   display: block;
+  overflow: hidden;
 }
 
 .project-link {
@@ -296,7 +298,7 @@ header {
   float: left;
   margin-top: 12px;
   margin-bottom: 10px;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .project-link:hover {
@@ -456,6 +458,90 @@ header {
   color: #344563;
 }
 
+#project-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #c1c7d0;
+  display: none;
+  padding: 50px;
+}
+
+.popup-wrapper {
+  background: #fff;
+  overflow: hidden;
+  height: 95%;
+  border-radius: 16px;
+  margin: auto;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#close-project-popup {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  cursor: pointer;
+}
+
+.work-tag-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.work-tag-button-wrapper {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.work-description-popup {
+  padding-right: 50px;
+  font-weight: 600;
+}
+
+#project-popup-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.tech-tag-popup ul {
+  display: block !important;
+}
+
+.tech-tag-popup ul li {
+  display: inline-block !important;
+  margin-bottom: 8px;
+}
+
+.live-link {
+  padding: 10px;
+  padding-right: 50px;
+  font-size: 15px;
+  line-height: 20px;
+  position: relative;
+  width: 31%;
+}
+
+.link-link-icon {
+  width: 20px;
+  height: auto;
+  position: absolute;
+  right: 13px;
+}
+
+.project-link-div-sec {
+  border-top: 1px solid #ebecf0;
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* mobile css */
 #mobile-menu {
   position: fixed;
@@ -613,5 +699,16 @@ header {
     background-image: url('../image/contact-form-background-shapes-desktop.png');
     background-size: 95% auto;
     background-position: center;
+  }
+
+  .work-tag-wrapper {
+    overflow: hidden;
+    width: 60%;
+  }
+
+  .work-tag-button-wrapper {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
   }
 }
