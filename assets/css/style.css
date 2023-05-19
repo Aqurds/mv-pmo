@@ -183,6 +183,7 @@ header {
 .work-info {
   width: 100%;
   display: block;
+  margin-bottom: 20px;
 }
 
 .work-info ul {
@@ -229,7 +230,7 @@ header {
   color: #344563;
   width: 100%;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
 
 .work-tag {
@@ -475,28 +476,29 @@ header {
  background: #fff;
  overflow: hidden;
  /* width: 80%; */
- height: 80%;
+ height: 95%;
  overflow-y: auto;
  border-radius: 16px;
  margin: auto;
- padding: 50px;
+ padding: 20px;
 }
 
 #close-project-popup {
   position: absolute;
-  top: 100px;
-  right: 100px;
+  top: 60px;
+  right: 60px;
   cursor: pointer;
 }
 
 .work-tag-wrapper {
   overflow: hidden;
-  width: 60%;
+  width: 100%;
 }
 
 .work-tag-button-wrapper {
   display: flex;
   margin-top: 50px;
+  flex-direction: column;
 }
 
 .work-description-popup {
@@ -518,12 +520,12 @@ header {
 }
 
 .live-link {
-  margin-right: 10px;
   padding: 10px;
   padding-right: 50px;
   font-size: 15px;
   line-height: 20px;
   position: relative;
+  width: 31%;
 }
 
 .link-link-icon {
@@ -531,6 +533,14 @@ header {
   height: auto;
   position: absolute;
   right: 13px;
+}
+
+.project-link-div-sec {
+  border-top: 1px solid #ebecf0;
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* mobile css */
@@ -690,5 +700,16 @@ header {
     background-image: url('../image/contact-form-background-shapes-desktop.png');
     background-size: 95% auto;
     background-position: center;
+  }
+
+  .work-tag-wrapper {
+    overflow: hidden;
+    width: 60%;
+  }
+
+  .work-tag-button-wrapper {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
   }
 }
