@@ -27,6 +27,7 @@ const closeElem = document.getElementsByClassName('close-mobile-menu');
 for (let i = 0; i < closeElem.length; i += 1) {
   closeElem[i].addEventListener('click', () => { toggleMobileMenu(State[1]); });
 }
+
 // Project popup code starts here
 const projectData = [
   {
@@ -182,3 +183,32 @@ const triggerElem = document.getElementsByClassName('project-link');
 for (let i = 0; i < triggerElem.length; i += 1) {
   triggerElem[i].addEventListener('click', (e) => { openProjectPopup(e); });
 }
+
+// Form validation
+const form = document.getElementById('contact-form');
+const email = document.getElementById('form-email');
+const errorMsg = document.getElementById('error');
+
+function emailLowerCaseChecker(emailchecker, event) {
+  for (let counter = 0; counter < emailchecker.length; counter += 1) {
+    if (emailchecker[counter] === emailchecker[counter].toUpperCase()) {
+      errorMsg.innerText = 'Form not sent! Email should be in Lowercase!';
+      event.preventDefault();
+      break;
+    } else {
+      errorMsg.innerText = '';
+    }
+  }
+}
+
+form.addEventListener('submit', (event) => {
+  const emailValue = email.value;
+  const emailchecker = emailValue.replace(/[^a-zA-Z]/g, '').split('');
+  emailLowerCaseChecker(emailchecker, event);
+});
+
+// email.addEventListener('input', (event) => {
+//   const emailValue = email.value;
+//   const emailchecker = emailValue.replace(/[^a-zA-Z]/g, '').split('');
+//   emailLowerCaseChecker(emailchecker)
+// });
