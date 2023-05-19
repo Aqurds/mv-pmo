@@ -185,25 +185,29 @@ for (let i = 0; i < triggerElem.length; i += 1) {
 }
 
 // Form validation
-// function formValidation(e) {
-//   e.preventDefault();
-//   const inputEmail = document.getElementById("form-email").value;
-//   console.log(inputEmail);
-// }
+function emailLowerCaseChecker(emailchecker, event) {
+  for (let counter = 0; counter < emailchecker.length; counter += 1) {
+    if (emailchecker[counter] === emailchecker[counter].toUpperCase()) {
+      errorMsg.innerText = 'Form not sent! Email should be in Lowercase!';
+      event.preventDefault();
+      break;
+    } else {
+      errorMsg.innerText = '';
+    }
+  }
+}
 
-// const submitButton = document.getElementById("form-submit");
-// submitButton.addEventListener("click", formValidation);
-
-const form = document.querySelector('.contact-form');
-const email = document.querySelector('.user-email');
-const errorMsg = document.querySelector('.error');
+const form = document.getElementById('contact-form');
+const email = document.getElementById('form-email');
+const errorMsg = document.getElementById('error');
 form.addEventListener('submit', (event) => {
   const emailValue = email.value;
   const emailchecker = emailValue.replace(/[^a-zA-Z]/g, '').split('');
-  for (let counter = 0; counter < emailchecker.length; counter += 1) {
-    if (emailchecker[counter] === emailchecker[counter].toUpperCase()) {
-      errorMsg.innerText = 'Invalid,Email should be in Lowercase';
-      event.preventDefault();
-    }
-  }
+  emailLowerCaseChecker(emailchecker, event)
 });
+
+// email.addEventListener('input', (event) => {
+//   const emailValue = email.value;
+//   const emailchecker = emailValue.replace(/[^a-zA-Z]/g, '').split('');
+//   emailLowerCaseChecker(emailchecker)
+// });
