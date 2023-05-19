@@ -27,7 +27,6 @@ const closeElem = document.getElementsByClassName('close-mobile-menu');
 for (let i = 0; i < closeElem.length; i += 1) {
   closeElem[i].addEventListener('click', () => { toggleMobileMenu(State[1]); });
 }
-//window poppup
 // Project popup code starts here
 const projectData = [
   {
@@ -73,15 +72,15 @@ const projectData = [
     technologies: ['Html', 'CSS', 'Javascript', 'Ruby', 'Python', 'Node'],
     live_link: 'www.google.com',
     source_link: 'www.google.com',
-  }
+  },
 ];
 
 function insertTechList(data) {
   let techList = '';
-  data.technologies.map(insertTech);
   function insertTech(data) {
     techList += `<li class="langs">${data}</li>`;
   }
+  data.technologies.map(insertTech);
   return techList;
 }
 
@@ -125,26 +124,24 @@ function insertTechList(data) {
   document.getElementById('portfolio-section').innerHTML = htmlSkeletonToInsert;
 })();
 
-const closeElemPopup = document.getElementById('close-project-popup');
-closeElemPopup.addEventListener('click', closeProjectPopup)
-
 function closeProjectPopup() {
-  console.log('clicked');
   document.getElementById('project-popup').style.display = 'none';
-}
+};
+const closeElemPopup = document.getElementById('close-project-popup');
+closeElemPopup.addEventListener('click', closeProjectPopup);
 
 const triggerElem = document.getElementsByClassName('project-link');
 for (let i = 0; i < triggerElem.length; i += 1){
-  triggerElem[i].addEventListener('click', (e) => {openProjectPopup(e)});
+  triggerElem[i].addEventListener('click', (e) => { openProjectPopup(e) });
 }
 
 function openProjectPopup(e) {
   e.preventDefault();
   console.log(e)
-  let targetIndex = e.target.attributes[2].value
-  const techList = insertTechList(projectData[targetIndex])
+  const targetIndex = e.target.attributes[2].value;
+  const techList = insertTechList(projectData[targetIndex]);
 
-  let elemToInsert = `<h3 class="title work-title">
+  const elemToInsert = `<h3 class="title work-title">
     ${projectData[targetIndex].name}
     </h3>
     <div class="work-info">
@@ -176,9 +173,8 @@ function openProjectPopup(e) {
     </a>
     </div>
     </div>
-    </div>`
+    </div>`;
 
-  console.log('clicked', targetIndex);
   document.getElementsByClassName('popup-wrapper')[0].innerHTML = elemToInsert;
   document.getElementById('project-popup').style.display = 'block';
 }
