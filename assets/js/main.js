@@ -32,62 +32,61 @@ for (let i = 0; i < closeElem.length; i += 1) {
 const projectData = [
   {
     id: 0,
-    name: "Tonic",
-    tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    details: "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "./assets/image/work_image_1.png",
-    technologies: ["Html", "CSS", "Javascript", "Python"],
-    live_link: "www.google.com",
-    source_link: "www.google.com"
+    name: 'Tonic',
+    tag: { sector: 'Caopy', type: 'Band End Dev', year: 2015 },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    details: 'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: './assets/image/work_image_1.png',
+    technologies: ['Html', 'CSS', 'Javascript', 'Python'],
+    live_link: 'www.google.com',
+    source_link: 'www.google.com',
   },
   {
     id: 1,
-    name: "Multi-Post Stories",
-    tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    details: "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "./assets/image/work_image_2.png",
-    technologies: ["Html", "CSS", "Javascript", "Ruby"],
-    live_link: "www.google.com",
-    source_link: "www.google.com"
+    name: 'Multi-Post Stories',
+    tag: { sector: 'Caopy', type: 'Band End Dev', year: 2015 },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    details: 'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: './assets/image/work_image_2.png',
+    technologies: ['Html', 'CSS', 'Javascript', 'Ruby'],
+    live_link: 'www.google.com',
+    source_link: 'www.google.com',
   },
   {
     id: 2,
-    name: "Tonic",
-    tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    details: "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "./assets/image/work_image_3.png",
-    technologies: ["Html", "CSS", "Javascript", "Python"],
-    live_link: "www.google.com",
-    source_link: "www.google.com"
+    name: 'Tonic',
+    tag: { sector: 'Caopy', type: 'Band End Dev', year: 2015 },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    details: 'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: './assets/image/work_image_3.png',
+    technologies: ['Html', 'CSS', 'Javascript', 'Python'],
+    live_link: 'www.google.com',
+    source_link: 'www.google.com',
   },
   {
     id: 3,
-    name: "Multi-Post Stories",
-    tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    details: "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "./assets/image/work_image_4.png",
-    technologies: ["Html", "CSS", "Javascript", "Ruby", "Python", "Node"],
-    live_link: "www.google.com",
-    source_link: "www.google.com"
+    name: 'Multi-Post Stories',
+    tag: { sector: 'Caopy', type: 'Band End Dev', year: 2015 },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    details: 'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: './assets/image/work_image_4.png',
+    technologies: ['Html', 'CSS', 'Javascript', 'Ruby', 'Python', 'Node'],
+    live_link: 'www.google.com',
+    source_link: 'www.google.com',
   }
 ];
 
 function insertTechList(data) {
-  let techList = "";
+  let techList = '';
   data.technologies.map(insertTech);
   function insertTech(data) {
     techList += `<li class="langs">${data}</li>`;
-  };
+  }
   return techList;
 }
 
 (function loadProjectData() {
-  let htmlSkeletonToInsert = "";
-  projectData.map(insertData)
+  let htmlSkeletonToInsert = '';
   function insertData(data, index) {
     const techList = insertTechList(data)
     htmlSkeletonToInsert += `<div class="card">
@@ -122,20 +121,21 @@ function insertTechList(data) {
 </div>
     `;
   }
-  document.getElementById("portfolio-section").innerHTML = htmlSkeletonToInsert;
+  projectData.map(insertData);
+  document.getElementById('portfolio-section').innerHTML = htmlSkeletonToInsert;
 })();
 
-const closeElemPopup = document.getElementById("close-project-popup");
-closeElemPopup.addEventListener("click", closeProjectPopup)
+const closeElemPopup = document.getElementById('close-project-popup');
+closeElemPopup.addEventListener('click', closeProjectPopup)
 
 function closeProjectPopup() {
-  console.log("clicked");
+  console.log('clicked');
   document.getElementById('project-popup').style.display = 'none';
 }
 
-const triggerElem = document.getElementsByClassName("project-link");
+const triggerElem = document.getElementsByClassName('project-link');
 for (let i = 0; i < triggerElem.length; i += 1){
-  triggerElem[i].addEventListener("click", (e) => {openProjectPopup(e)});
+  triggerElem[i].addEventListener('click', (e) => {openProjectPopup(e)});
 }
 
 function openProjectPopup(e) {
@@ -178,7 +178,7 @@ function openProjectPopup(e) {
     </div>
     </div>`
 
-  console.log("clicked", targetIndex);
+  console.log('clicked', targetIndex);
   document.getElementsByClassName('popup-wrapper')[0].innerHTML = elemToInsert;
   document.getElementById('project-popup').style.display = 'block';
 }
