@@ -122,7 +122,7 @@ function loadProjectData() {
   }
   projectData.map(insertData);
   document.getElementById('portfolio-section').innerHTML = htmlSkeletonToInsert;
-};
+}
 loadProjectData();
 
 function closeProjectPopup() {
