@@ -27,3 +27,13 @@ const closeElem = document.getElementsByClassName('close-mobile-menu');
 for (let i = 0; i < closeElem.length; i += 1) {
   closeElem[i].addEventListener('click', () => { toggleMobileMenu(State[1]); });
 }
+
+// Form validation
+// function formValidation(e) {
+//   e.preventDefault();
+//   const inputEmail = document.getElementById("form-email").value;
+//   console.log(inputEmail);
+// }
+
+// const submitButton = document.getElementById("form-submit");
+// submitButton.addEventListener("click", formValidation);
