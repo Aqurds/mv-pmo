@@ -185,11 +185,11 @@ for (let i = 0; i < triggerElem.length; i += 1) {
 }
 
 // Form validation
-function formValidation(e) {
-  e.preventDefault();
-  const inputEmail = document.getElementById("form-email").value;
-  console.log(inputEmail);
-}
+// function formValidation(e) {
+//   e.preventDefault();
+//   const inputEmail = document.getElementById("form-email").value;
+//   console.log(inputEmail);
+// }
 
-const submitButton = document.getElementById("form-submit");
-submitButton.addEventListener("click", formValidation);
+// const submitButton = document.getElementById("form-submit");
+// submitButton.addEventListener("click", formValidation);
