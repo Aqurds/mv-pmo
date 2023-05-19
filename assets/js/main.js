@@ -84,7 +84,7 @@ function insertTechList(data) {
   return techList;
 }
 
-(function loadProjectData() {
+function loadProjectData() {
   let htmlSkeletonToInsert = '';
   function insertData(data, index) {
     const techList = insertTechList(data);
@@ -122,7 +122,8 @@ function insertTechList(data) {
   }
   projectData.map(insertData);
   document.getElementById('portfolio-section').innerHTML = htmlSkeletonToInsert;
-})();
+};
+loadProjectData();
 
 function closeProjectPopup() {
   document.getElementById('project-popup').style.display = 'none';
