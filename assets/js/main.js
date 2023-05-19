@@ -87,7 +87,7 @@ function insertTechList(data) {
 (function loadProjectData() {
   let htmlSkeletonToInsert = '';
   function insertData(data, index) {
-    const techList = insertTechList(data)
+    const techList = insertTechList(data);
     htmlSkeletonToInsert += `<div class="card">
     <div>
         <img class="work-image" src="${data.image}" alt="Work image one">
@@ -126,14 +126,9 @@ function insertTechList(data) {
 
 function closeProjectPopup() {
   document.getElementById('project-popup').style.display = 'none';
-};
+}
 const closeElemPopup = document.getElementById('close-project-popup');
 closeElemPopup.addEventListener('click', closeProjectPopup);
-
-const triggerElem = document.getElementsByClassName('project-link');
-for (let i = 0; i < triggerElem.length; i += 1){
-  triggerElem[i].addEventListener('click', (e) => { openProjectPopup(e) });
-}
 
 function openProjectPopup(e) {
   e.preventDefault();
@@ -177,4 +172,9 @@ function openProjectPopup(e) {
 
   document.getElementsByClassName('popup-wrapper')[0].innerHTML = elemToInsert;
   document.getElementById('project-popup').style.display = 'block';
-}
+};
+
+const triggerElem = document.getElementsByClassName('project-link');
+for (let i = 0; i < triggerElem.length; i += 1) {
+  triggerElem[i].addEventListener('click', (e) => { openProjectPopup(e) });
+};
