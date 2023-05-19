@@ -132,7 +132,6 @@ closeElemPopup.addEventListener('click', closeProjectPopup);
 
 function openProjectPopup(e) {
   e.preventDefault();
-  console.log(e)
   const targetIndex = e.target.attributes[2].value;
   const techList = insertTechList(projectData[targetIndex]);
 
@@ -172,9 +171,9 @@ function openProjectPopup(e) {
 
   document.getElementsByClassName('popup-wrapper')[0].innerHTML = elemToInsert;
   document.getElementById('project-popup').style.display = 'block';
-};
+}
 
 const triggerElem = document.getElementsByClassName('project-link');
 for (let i = 0; i < triggerElem.length; i += 1) {
-  triggerElem[i].addEventListener('click', (e) => { openProjectPopup(e) });
-};
+  triggerElem[i].addEventListener('click', (e) => { openProjectPopup(e); });
+}
