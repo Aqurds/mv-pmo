@@ -185,6 +185,10 @@ for (let i = 0; i < triggerElem.length; i += 1) {
 }
 
 // Form validation
+const form = document.getElementById('contact-form');
+const email = document.getElementById('form-email');
+const errorMsg = document.getElementById('error');
+
 function emailLowerCaseChecker(emailchecker, event) {
   for (let counter = 0; counter < emailchecker.length; counter += 1) {
     if (emailchecker[counter] === emailchecker[counter].toUpperCase()) {
@@ -197,13 +201,10 @@ function emailLowerCaseChecker(emailchecker, event) {
   }
 }
 
-const form = document.getElementById('contact-form');
-const email = document.getElementById('form-email');
-const errorMsg = document.getElementById('error');
 form.addEventListener('submit', (event) => {
   const emailValue = email.value;
   const emailchecker = emailValue.replace(/[^a-zA-Z]/g, '').split('');
-  emailLowerCaseChecker(emailchecker, event)
+  emailLowerCaseChecker(emailchecker, event);
 });
 
 // email.addEventListener('input', (event) => {
