@@ -473,10 +473,10 @@ header {
   background: #fff;
   overflow: hidden;
   height: 95%;
-  overflow-y: auto;
   border-radius: 16px;
   margin: auto;
   padding: 20px;
+  overflow-y: auto;
 }
 
 #close-project-popup {
@@ -499,11 +499,14 @@ header {
 
 .work-description-popup {
   padding-right: 50px;
+  font-weight: 600;
 }
 
 #project-popup-image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .tech-tag-popup ul {
