@@ -193,3 +193,17 @@ for (let i = 0; i < triggerElem.length; i += 1) {
 
 // const submitButton = document.getElementById("form-submit");
 // submitButton.addEventListener("click", formValidation);
+
+const form = document.querySelector('.contact-form');
+const email = document.querySelector('.user-email');
+const errorMsg = document.querySelector('.error');
+form.addEventListener('submit', (event) => {
+  const emailValue = email.value;
+  const emailchecker = emailValue.replace(/[^a-zA-Z]/g, '').split('');
+  for (let counter = 0; counter < emailchecker.length; counter += 1) {
+    if (emailchecker[counter] === emailchecker[counter].toUpperCase()) {
+      errorMsg.innerText = 'Invalid,Email should be in Lowercase';
+      event.preventDefault();
+    }
+  }
+});
