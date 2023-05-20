@@ -212,3 +212,12 @@ form.addEventListener('submit', (event) => {
 //   const emailchecker = emailValue.replace(/[^a-zA-Z]/g, '').split('');
 //   emailLowerCaseChecker(emailchecker)
 // });
+
+//local-storage
+const formInputFields = document.getElementsByClassName('form-input-fields');
+for (let i = 0; i<formInputFields; i += 1) {
+  formInputFields[i].addEventListener('input', (event) => {
+    const emailValue = email.value;
+    console.log("hello")
+  })
+};
