@@ -208,7 +208,6 @@ form.addEventListener('submit', (event) => {
 });
 
 //local-storage
-
 const formInputFields = document.getElementsByClassName('form-input-field');
 const localStorageObject = {
   name: '',
