@@ -76,39 +76,6 @@
 
     <!-- Section, contains work details -->
     <section class="section-work" id="portfolio-section">
-        <!-- <div class="card">
-            <div>
-                <img class="work-image" src="./assets/image/work_image_1.png" alt="Work image one">
-            </div>
-            <div>
-                <h3 class="title work-title">
-                    Tonic
-                </h3>
-                <div class="work-info">
-                    <ul>
-                        <li class="first-li">CANOPY</li>
-                        <li>Back End Dev</li>
-                        <li>2015</li>
-                    </ul>
-                </div>
-                <p class="work-description">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                </p>
-                <div class="work-tag">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                    </ul>
-                </div>
-                <div class="project-link-div">
-                    <a href="#" class="project-link">
-                        See project
-                    </a>
-                </div>
-            </div>
-        </div> -->
-      
     </section>
 
     <!-- Section, contains about information -->
@@ -201,10 +168,10 @@
             </p>
             <div class="contact-form">
                 <form action="https://formspree.io/f/xpzebrvw" method="POST" id="contact-form">
-                    <input type="text" name="name" maxlength="30" placeholder="Lorem Ipsum" required>
-                    <input type="email" name="email" id="form-email" placeholder="loremipsum@gmail.com" required>
+                    <input class="form-input-field" id="form-name" type="text" name="name" maxlength="30" placeholder="Lorem Ipsum" required>
+                    <input class="form-input-field" type="email" name="email" id="form-email" placeholder="loremipsum@gmail.com" required>
                     <small id="error"></small>
-                    <textarea name="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here..." required></textarea>
+                    <textarea class="form-input-field" id="form-message" name="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here..." required></textarea>
                     <button class="project-link-contact" id="form-submit" type="submit">Get in touch</button>
                 </form>
             </div>
