@@ -207,7 +207,7 @@ form.addEventListener('submit', (event) => {
   emailLowerCaseChecker(emailchecker, event);
 });
 
-//local-storage
+// local-storage
 const formInputFields = document.getElementsByClassName('form-input-field');
 const localStorageObject = {
   name: '',
