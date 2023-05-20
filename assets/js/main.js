@@ -207,8 +207,18 @@ form.addEventListener('submit', (event) => {
   emailLowerCaseChecker(emailchecker, event);
 });
 
-// email.addEventListener('input', (event) => {
-//   const emailValue = email.value;
-//   const emailchecker = emailValue.replace(/[^a-zA-Z]/g, '').split('');
-//   emailLowerCaseChecker(emailchecker)
+const formInputFields = document.getElementsByClassName('form-input-field');
+
+function manageEvent() {
+  const emailValue = email.value;
+  console.log("hello");
+}
+
+for (let i = 0; i<formInputFields; i += 1) {
+  formInputFields[i].addEventListener('input', manageEvent)
+};
+
+// formInputFields.map((field) => {
+  
 // });
+  
